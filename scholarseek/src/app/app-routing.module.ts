@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { AuthGuard } from './services/auth-guard.service';
+//import { AuthGuard } from './services/auth-guard.service';
 
 const routes: Routes = [
   {
@@ -24,7 +24,8 @@ const routes: Routes = [
   { path: 'pengumumanadmin', loadChildren: './pengumumanadmin/pengumumanadmin.module#PengumumanadminPageModule' },
   { path: 'tambahbeasiswa', loadChildren: './tambahbeasiswa/tambahbeasiswa.module#TambahbeasiswaPageModule' },
   { path: 'tambahpengumuman', loadChildren: './tambahpengumuman/tambahpengumuman.module#TambahpengumumanPageModule' },
-  { path: 'tjoin', loadChildren: './tjoin/tjoin.module#TjoinPageModule' }
+  { path: 'tjoin', loadChildren: './tjoin/tjoin.module#TjoinPageModule' },
+  { path: 'register', loadChildren: './register/register.module#RegisterPageModule' }
 ];
 
 @NgModule({

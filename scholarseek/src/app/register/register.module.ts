@@ -5,14 +5,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { JoinPage } from './join.page';
-import { FileUploadModule } from 'ng2-file-upload';
-
+import { RegisterPage } from './register.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: JoinPage
+    component: RegisterPage
   }
 ];
 
@@ -21,9 +19,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes),
-    FileUploadModule
+    RouterModule.forChild(routes)
   ],
-  declarations: [JoinPage]
+  declarations: [RegisterPage]
 })
-export class JoinPageModule {}
+export class RegisterPageModule {}

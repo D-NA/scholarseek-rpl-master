@@ -1,21 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthenticationService } from '../services/Authentication.service';
+//import { AuthenticationService } from '../services/Authentication.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage implements OnInit {
+export class HomePage {
 
-  constructor(
-    private authService: AuthenticationService
-    ) { }
+  
+  //constructor(
+  //  private authService: AuthenticationService
+  //  ) { }
  
-  ngOnInit() {
-  }
+  //ngOnInit() {
+  //}
  
-  logoutUser(){
-    this.authService.logout();
-  }
+  //logoutUser(){
+  //  this.authService.logout();
+  //}
 }

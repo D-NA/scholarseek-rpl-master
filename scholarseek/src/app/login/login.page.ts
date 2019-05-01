@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthenticationService } from '../services/Authentication.service';
+import { AngularFireAuth } from '@angular/fire/auth';
+import { auth } from 'firebase/app';
+//import { AuthenticationService } from '../services/Authentication.service';
 
 
 @Component({
@@ -9,13 +11,27 @@ import { AuthenticationService } from '../services/Authentication.service';
 })
 export class LoginPage implements OnInit {
 
-  constructor( private authService: AuthenticationService ) { }
+  username: string = "";
+  password: string = "";
+
+  constructor(public afAuth: AngularFireAuth) { }
 
   ngOnInit() {
   }
 
-  loginUser() {
-    this.authService.login();
+  // abcdefg + @apapun.com
+  async login() {
+    const { username, password } = this;
+    try{
+      // kind of hack
+      const res = await this.afAuth.auth.signInWithEmailAndPassword(username + '@apps.ipb.ac.id', password)
+
+    } catch(err){
+      console.dir(err);
+      if(err.code === "auth/user-not-found"){
+        console.log("User not found")
+      }
+    }
   }
 
 }
