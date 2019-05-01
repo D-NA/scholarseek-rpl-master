@@ -1,0 +1,18 @@
+.splash {
+    --background: #F6F5F1;
+    max-width: 100%;
+  }
+
+.isi{
+    position: absolute;
+    top: 250px;
+    left: 175px;
+    transform: translate(-50%,-50%);
+    width: 75%;
+}
+
+.button {
+    position: relative;
+    top: 250px;
+    font-size: 10pt;
+}

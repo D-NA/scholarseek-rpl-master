@@ -1,0 +1,55 @@
+.toolbar {
+    --background: #F6F5F1;
+    color: #D60024;
+    a {
+        color: #D60024;
+        text-decoration: none;
+    }
+  }
+
+.judul {
+    text-align: center;
+}
+
+.kembali {
+    font-size: 18pt;
+}
+
+.konten {
+    --background: #F6F5F1;
+    color: #000B29;
+}
+
+ion-card {
+    background-color: #fff;
+    border: 3px solid #E6BA45;
+    input[type=file] {
+        font-size: 100px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+    }
+}
+
+.button {
+    --background: #000B29;
+    margin-top: 15px;
+}
+
+ion-img {
+    margin-left: 70px;
+    margin-top: 5px;
+    width: 80px;
+}
+
+.paragraf {
+    color: #000B29;
+    top: 90px;
+    left: 110px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    text-align: center;
+}

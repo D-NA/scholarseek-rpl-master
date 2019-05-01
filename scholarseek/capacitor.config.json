@@ -1,0 +1,6 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "scholarseek",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}

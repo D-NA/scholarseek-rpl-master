@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar class="toolbar">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="judul">
+      BERANDA
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="konten">
+    <div class="bar bar-header">
+      <h2 class="title">Daftar Beasiswa</h2>
+    </div>
+    
+    <div class="beasiswa">
+      <ion-grid>
+          <ion-row>
+            <ion-col size="3" class="logoBeasiswa">
+              <img src="../assets/img/vdmi.png" alt="Logo Instansi">
+            </ion-col>
+            <ion-col size="9" class="namaBeasiswa">
+              <h2>Beasiswa VDMI Tahun 2019-2020</h2>
+            </ion-col>
+            <ion-col size="12" class="deskripsiBeasiswa">
+                <p style="color: #E6BA45">Deskripsi</p>
+                <p>Yayasan Van Deventer - Maas Stichting (YVDMI) akan membuka kembali pendaftaran permohonan beasiswa tahun ajaran 2019-2020 yang dimulai pada...</p>
+                <a href="../deskripsi">Baca Selengkapnya</a>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+    </div>
+
+    <div class="beasiswa">
+        <ion-grid>
+            <ion-row>
+              <ion-col size="3" class="logoBeasiswa">
+                <img src="../assets/img/vdmi.png" alt="Logo Instansi">
+              </ion-col>
+              <ion-col size="9" class="namaBeasiswa">
+                <h2>Beasiswa VDMI Tahun 2019-2020</h2>
+              </ion-col>
+              <ion-col size="12" class="deskripsiBeasiswa">
+                  <p style="color: #E6BA45">Deskripsi</p>
+                  <p>Yayasan Van Deventer - Maas Stichting (YVDMI) akan membuka kembali pendaftaran permohonan beasiswa tahun ajaran 2019-2020 yang dimulai pada...</p>
+                  <a href="../deskripsi">Baca Selengkapnya</a>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+      </div>
+
+  
+</ion-content>
+
+<ion-content padding>
+  <ion-button (click)="logoutUser()">
+      Logout
+    </ion-button>
+</ion-content>

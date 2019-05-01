@@ -1,0 +1,27 @@
+.toolbar {
+    --background: #F6F5F1;
+    color: #D60024;
+    a {
+        color: #D60024;
+        text-decoration: none;
+    }
+}
+
+.judul {
+    text-align: center;
+}
+
+.kembali {
+    font-size: 18pt;
+}
+
+.konten {
+    --background: #F6F5F1;
+    color: #000B29;
+    .tombolUnduh {
+        --background: #000B29;
+    }
+    li {
+        margin-bottom: 15px;
+    }
+}

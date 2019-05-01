@@ -1,0 +1,36 @@
+.toolbar {
+    --background: #F6F5F1;
+    color: #D60024;
+    a {
+        color: #D60024;
+        text-decoration: none;
+    }
+  }
+
+.judul {
+    text-align: center;
+}
+
+.kembali {
+    font-size: 18pt;
+}
+
+.konten {
+    --background: #F6F5F1;
+    color: #000B29;
+    .logo {
+        margin-top: 20px;
+        text-align: center;
+        img {
+            width: 100px;
+        }
+    }
+    .namaBeasiswa {
+        text-align: center;
+        margin-top: -20px;
+    }
+    .button {
+        --background: #000B29;
+    }
+}
+

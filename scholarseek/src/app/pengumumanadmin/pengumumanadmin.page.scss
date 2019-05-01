@@ -1,0 +1,39 @@
+.toolbar {
+    --background: #F6F5F1;
+    color: #D60024;
+    a {
+        color: #D60024;
+        text-decoration: none;
+    }
+  }
+
+.judul {
+    text-align: center;
+}
+
+.kembali {
+    font-size: 18pt;
+}
+
+.konten {
+    --background: #F6F5F1;
+    color: #000B29;
+    .tombolHapus {
+        --background: #D60024;
+    }
+    li {
+        margin-bottom: 15px;
+    }
+    .tambahPengumuman {
+        --background: #E6BA45;
+        margin-top: 50px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .simpan {
+        --background: #000B29;
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}

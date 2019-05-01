@@ -1,0 +1,32 @@
+.toolbar {
+    --background: #F6F5F1;
+    color: #D60024;
+    a {
+        color: #D60024;
+        text-decoration: none;
+    }
+}
+
+.judul {
+    text-align: center;
+}
+
+.kembali {
+    font-size: 18pt;
+}
+
+.konten {
+    --background: #F6F5F1;
+    color: #000B29;
+    padding-right: 10px;
+    h5 {
+        color: #E6BA45;
+        margin-left: 20px;
+    }
+    ul {
+        list-style-type: none;
+        li {
+            margin-bottom: 5px;
+        }
+    }
+}
