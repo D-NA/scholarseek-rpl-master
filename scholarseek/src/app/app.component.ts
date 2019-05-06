@@ -3,17 +3,21 @@ import { Component } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-//import { Router } from '@angular/router';
+import { Router } from '@angular/router';
+
 //import { AuthenticationService } from './services/Authentication.service';
 //import * as firebase from 'firebase';
 
-//const config = {
-//  apiKey: 'YOUR_APIKEY',
-//  authDomain: 'YOUR_AUTH_DOMAIN',
-//  databaseURL: 'YOUR_DATABASE_URL',
-//  projectId: 'YOUR_PROJECT_ID',
-//  storageBucket: 'YOUR_STORAGE_BUCKET',
-//};
+const config = {
+  apiKey: "AIzaSyBuoN3-VKaGWRa8dUPCccPeD9z7tzQytu0",
+  authDomain: "scholarseek-dd1.firebaseapp.com",
+  databaseURL: "https://scholarseek-dd1.firebaseio.com",
+  projectId: "scholarseek-dd1",
+  storageBucket: "scholarseek-dd1.appspot.com",
+  messagingSenderId: "81944562574"
+};
+
+export default config;
 
 @Component({
   selector: 'app-root',
@@ -44,7 +48,7 @@ export class AppComponent {
   ];
 
   constructor(
-    //private router: Router,
+    private router: Router,
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,

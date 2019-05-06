@@ -25,7 +25,10 @@ const routes: Routes = [
   { path: 'tambahbeasiswa', loadChildren: './tambahbeasiswa/tambahbeasiswa.module#TambahbeasiswaPageModule' },
   { path: 'tambahpengumuman', loadChildren: './tambahpengumuman/tambahpengumuman.module#TambahpengumumanPageModule' },
   { path: 'tjoin', loadChildren: './tjoin/tjoin.module#TjoinPageModule' },
-  { path: 'register', loadChildren: './register/register.module#RegisterPageModule' }
+  { path: 'register', loadChildren: './register/register.module#RegisterPageModule' },
+  { path: 'sebagai', loadChildren: './sebagai/sebagai.module#SebagaiPageModule' },
+  { path: 'login-admin', loadChildren: './login-admin/login-admin.module#LoginAdminPageModule' },
+  { path: 'register-admin', loadChildren: './register-admin/register-admin.module#RegisterAdminPageModule' }
 ];
 
 @NgModule({

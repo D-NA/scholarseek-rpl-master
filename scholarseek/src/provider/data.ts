@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import 'rxjs/add/operator/map';
+//import 'rxjs/add/operator/map';
 import { Storage } from '@ionic/storage';
 
 @Injectable()
 export class Data {
-  public BASE_URL = 'http://todoapi.atspace.cc';
+  public BASE_URL = 'http://scholarseek.atspace.cc';
 
   public HAS_LOGGED_IN = 'status_login';
   

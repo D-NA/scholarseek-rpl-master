@@ -12,23 +12,29 @@ import { IonicStorageModule } from '@ionic/storage';
 //import { AuthGuard } from './services/auth-guard.service';
 //import { AuthenticationService } from './services/Authentication.service';
 import { HttpClientModule } from '@angular/common/http';
-import firebaseConfig from './firebase'
-import { AngularFireModule } from '@angular/fire';
+//import firebaseConfig from './firebase'
+import { AngularFireModule, FirebaseNameOrConfigToken } from 'angularFire2';
 //import { environment } from 'src/environments/environment.prod';
 //import * as firebase from 'firebase';
 import { AngularFireAuthModule } from '@angular/fire/auth'
 //import { from } from 'rxjs';
+//import { DashboardComponent } from '';
+import { Camera } from '@ionic-native/Camera/ngx';
+import { File } from '@ionic-native/File/ngx';
+import { WebView } from '@ionic-native/ionic-webview/ngx';
+import { FilePath } from '@ionic-native/file-path/ngx';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    //DashboardComponent
   ],
   entryComponents: [],
   imports: [
     BrowserModule, 
     IonicModule.forRoot(), 
     AppRoutingModule,
-    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireModule.initializeApp(FirebaseNameOrConfigToken),
     AngularFireAuthModule,
     IonicStorageModule.forRoot(),
     HttpClientModule
@@ -38,7 +44,11 @@ import { AngularFireAuthModule } from '@angular/fire/auth'
     SplashScreen,
     //AuthGuard,
     //AuthenticationService,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    Camera,
+    File,
+    WebView,
+    FilePath
   ],
   bootstrap: [AppComponent]
 })

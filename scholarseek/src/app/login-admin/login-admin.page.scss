@@ -1,0 +1,97 @@
+.login {
+    --background : #F6F5F1;
+    .logo {
+        img {
+            width: 300px;
+            display: block;
+            margin: 70px auto 50px auto;
+        }
+    }
+    .utama {
+        background-color: #D60024;
+        width: 320px;
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 30px;
+        h1 {
+            padding-left: 10px;
+            padding-top: 15px;
+        }
+        // .tabUser {
+        //     background-color: white;
+        //     margin-left: 10px;
+        //     width: 150px;
+        //     label {
+        //         display: inline-block;
+        //         color: black;
+        //         font-size: 16pt;
+        //         margin-top: 5px;
+        //         margin-bottom: 5px;
+        //         margin-left: 50px;
+        //     }
+        //     input {
+        //         position: absolute;
+        //         left: -999em;
+        //     }
+        // }
+        .inputUser {
+            background-color: #ffff;
+            margin-left: 10px;
+            width: 300px;
+            color: black;
+            margin-top: -1px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            #username {
+                margin-left: 10px;
+                margin-right: 10px;
+                border: 1px solid #AFAFAF;
+                width: 280px;
+            }
+            #passUser {
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: 15px;
+                border: 1px solid #AFAFAF;
+                width: 280px;
+            }
+            .buttonUser {
+                margin-top: 15px;
+                width: 280px;
+                margin-left: 10px;
+                .button {
+                    --background: #000B29;
+                }
+            }
+            .lupaPass {
+                margin-top: 15px;
+                text-align: center;
+                a {
+                    text-decoration: none;
+                    color: #D60024;
+                }
+            }
+        }
+        // .tabAdmin {
+        //     position: absolute;
+        //     background-color: #D60024;
+        //     margin-left: 10px;
+        //     width: 150px;
+        //     right: 30px;
+        //     top: 231px;
+        //     label {
+        //         display: inline-block;
+        //         color: white;
+        //         font-size: 16pt;
+        //         margin-top: 5px;
+        //         margin-bottom: 5px;
+        //         margin-left: 40px;
+        //     }
+        //     input {
+        //         position: absolute;
+        //         left: -999em;
+        //     }
+        // }
+    }   
+}

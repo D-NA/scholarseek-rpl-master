@@ -16,11 +16,25 @@
     </div> -->
 
     <div class="inputUser">
-      <ion-input type="text" name="username" id="username" placeholder="Username"></ion-input>
-      <ion-input type="password" name="password" id="password" placeholder="Password"></ion-input>
+      <!--ion-input type="text" name="username" id="username" placeholder="Username"></ion-input>
+      <ion-input type="password" name="password" id="password" placeholder="Password"></ion-input-->
+      
+      <ion-list>
 
+        <ion-item>
+          <ion-label floating>Username</ion-label>
+          <ion-input type="text" [(ngModel)]="username"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+           <ion-label floating>Password</ion-label>
+           <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+      
+      </ion-list>  
+        
       <div class="buttonUser">
-        <ion-button expand="block" class="button">LOGIN</ion-button>
+        <ion-button expand="block" (click)="login()">LOGIN</ion-button>
       </div>
 
       <div class="lupaPass">
@@ -31,5 +45,5 @@
 
   <!--a [routerLink]="['/home']">Go to home</a-->
   <p  style="color: rgb(51, 47, 47)" style="text-align:center" > Belum memiliki akun? </p>
-  <ion-button expand="block" class="button"><a href="../register">SIGN UP</a></ion-button>  
+  <ion-button expand="block" class="button" (click)="register()">SIGN UP</ion-button>  
 </ion-content>

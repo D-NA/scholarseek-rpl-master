@@ -25,29 +25,18 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mahasiswa`
+-- Table structure for table `admin`
 --
 
-CREATE TABLE `mahasiswa` (
+CREATE TABLE `admin` (
   `username` varchar(30) NOT NULL,
   `nama` varchar(30) NOT NULL,
-  `nim` varchar(30) NOT NULL,
-  `ipk` float NOT NULL,
+  `nip` varchar(30) NOT NULL,
   `password` varchar(30) NOT NULL,
   `cpassword` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 COMMIT;
 
---
--- Dumping data for table `mahasiswa`
---
-
-/*INSERT INTO `mahasiswa` (`username`, `nama`, `nim`, `ipk`, `password`, `cpassword`) VALUES
-('dhanu_dwinanda', '', '', 0, 'password4', ''),
-('dhanu_dwinanda', '', '', 0, 'password4', ''),
-('dhanu_dwinanda', '', '', 0, 'password4', '');
-COMMIT;
-*/
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

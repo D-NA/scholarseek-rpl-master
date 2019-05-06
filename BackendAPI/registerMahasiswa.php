@@ -7,16 +7,21 @@
     $nama = "";
     $nim = "";
     $ipk = "";
+    $password ="";
+    $cpassword="";
 
     if (isset($postdata)) {
         $request = json_decode($postdata);
         $username = $request->username;
-        $nama =  $request->nama;
-        $nim =  $request->nim;
-        $ipk =  $request->ipk;
-        
+        $nama = $request->nama;
+        $nim = $request->nim;
+        $ipk = $request->ipk;
+        $password = $request->password;
+        $cpassword = $request->cpassword;
+
+        //ini buat cek apakah JSON ada isisnya atau tidak
         if($request){
-            $query_register = mysqli_query($connect,"UPDATE mahasiswa SET username = '$username', nama = '$nama', nim = '$nim', ipk = '$ipk'");
+            $query_register = mysqli_query($connect,"INSERT INTO mahasiswa (username, nama, nim, ipk, password, cpassword) VALUES ('$username', '$nama', '$nim', '$ipk', '$password', '$cpassword') ");
 
             if($query_register){
          
@@ -28,8 +33,7 @@
              else {
                  $data =array(
                      'message' => "Register Failed!",
-                     'status' => "404",
-                     'errornih' => $query_register
+                     'status' => "404"
                  ); 
              }
         }
@@ -39,9 +43,6 @@
                 'status' => "503"
             ); 
         }
-        
-            
-
         echo json_encode($data);
     }
 ?>

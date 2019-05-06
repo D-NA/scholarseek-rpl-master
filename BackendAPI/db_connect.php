@@ -1,7 +1,6 @@
 <?php
 
 //konfigurasi 
-    //http://stackoverflow.com/questions/18382740/cors-not-working-php
     if (isset($_SERVER['HTTP_ORIGIN'])) {
         header("Access-Control-Allow-Origin: {$_SERVER['HTTP_ORIGIN']}");
         header('Access-Control-Allow-Credentials: true');
@@ -26,6 +25,12 @@
     $username = "2988824_scholarseek";
     $password = "password123456789";
     $db_name = "2988824_scholarseek";
+
+    //$localhost = "127.0.0.1";
+    //$username = "postgres";
+    //$password = "";
+    //$db_name = "scholarseek";
+
 
     //create connection
     $connect = mysqli_connect($localhost, $username, $password, $db_name);

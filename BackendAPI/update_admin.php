@@ -4,16 +4,17 @@
 
     $postdata = file_get_contents("php://input");
     $username = "";
-    $password ="";
+    $nama = "";
+    $nip = "";
 
     if (isset($postdata)) {
         $request = json_decode($postdata);
         $username = $request->username;
-        $password = $request->password;
-
-        //ini buat cek apakah JSON ada isisnya atau tidak
+        $nama =  $request->nama;
+        $nip =  $request->nip;
+        
         if($request){
-            $query_register = mysqli_query($connect,"INSERT INTO mahasiswa (username, password) VALUES ('$username', '$password') ");
+            $query_register = mysqli_query($connect,"UPDATE admin SET username = '$username', nama = '$nama', nip = '$nip'");
 
             if($query_register){
          
@@ -25,7 +26,8 @@
              else {
                  $data =array(
                      'message' => "Register Failed!",
-                     'status' => "404"
+                     'status' => "404",
+                     'errornih' => $query_register
                  ); 
              }
         }
@@ -35,6 +37,9 @@
                 'status' => "503"
             ); 
         }
+        
+            
+
         echo json_encode($data);
     }
 ?>
